@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 500vh;
+}
+header::before{
+    content: "";
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    height: 150vh;
+    width: 100%;
+}
+header{
+    height: 150vh;
+    background-image: url(images/header-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+nav ul li a:hover{
+    color: #14BB96;
+}
+nav ul li a i{
+    background: url(images/hexagon-green.svg);
+    padding: 0.5rem;
+    background-repeat: no-repeat;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+nav ul li a i:hover{
+    background: url(images/white-hexagon.png);
+    padding: 0.5rem;
+    background-repeat: no-repeat;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+}
+.logo-img{
+    width: 10rem;
+    height: 100%;
+}
+.heroine{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20rem;
+    position: relative;
+    gap: 1rem;
+}
+.heroine a{
+    color: white;
+    text-decoration: none;
+}
+.heroine h1{
+    font-size: 6rem;
+    font-weight: bold;
+}
+.heroine p{
+    font-size: 1.7rem;
+    font-weight: lighter;
+}
+.heroine a{
+    font-size: 1.4rem;
+}
+#button1{
+    background-color: #14BF98;
+    padding: 1.5rem 3.5rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+#button1:hover{
+    background: none;
+    border: 2px solid #14BF98;
+    color: #14BF98;
+}
+#drop-arrow::after{
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+    color: white;
+}
+#drop-arrow:hover{
+    color: #14BF98;
+}
+#intro{
+    display: flex;
+    margin: 8rem 10rem;
+    align-items: center;
+    justify-content: space-around;
+}
+#intro .content{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#intro .content #title{
+    color: #14BF98;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+#intro .content h2{
+    color: #484A46;
+    font-size: 3rem;
+    font-weight: 700;
+}
+#intro .content #p1{
+    color: #7888B0;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+#intro .content #p2{
+    color: #78797F;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+#intro .content h3{
+    color: #484A46;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+#intro .content-img {
+    width: 60rem;
+    overflow: hidden;
+}
+#intro .content-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.25rem;
+    transition: all 0.3s;
+}
+#intro .content-img img:hover{
+    transform: scale(1.2);
+}
+.card-container{
+    margin: 0rem 14rem;
+}
+.card-container .cards{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 7rem;
+}
+.card-container .cards .card{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.card-container .cards .card i{
+    font-size: 3rem;
+    background-image: url(images/hexagon-green.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 9rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-container .cards .card h2{
+    font-size: 2rem;
+    color: #484A46;
+    font-weight: 700;
+}
+.card-container .cards .card p{
+    color: #788EBD;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.services{
+    margin: 8rem 14rem;
+}
+.services .services-content{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.services .services-content p{
+    font-size: 1.4rem;
+    color: #14BF98;
+}
+.services .services-content h2{
+    font-size: 3rem;
+    color: #484A46;
+    font-weight: 700;
+}
+.services-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 40rem;
+    width: 100%;
+    gap: 5rem;
+}
+.services .services-cards .card4{
+    border: 1px solid #80808024;
+    border-radius: 1rem;
+}
+.services .services-cards .card4 .card4-content{
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    position: relative;
+}
+.services .services-cards .card4 img{
+    width: 100%;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+.services .services-cards .card4 h3{
+    font-size: 2.5rem;
+    color: #484A46;
+}
+.services .services-cards .card4 p{
+    font-size: 1.6rem;
+    color: #8E798C;
+}
+.services .services-cards .card4 ul li{
+    font-size: 1.6rem;
+    color: #788EBD;
+    list-style: square;
+    list-style-position: inside;
+}
+.services .services-cards .card4 ul li::marker{
+    color: #14BF98;
+    margin-right: -1rem;
+}
+.services .services-cards .card4 ul li span{
+    position: relative;
+    left: -1rem;
+    font-weight: 400;
+}
+.services .services-cards .card4 p{
+    font-size: 1.8rem;
+    color: #788EBD;
+    font-weight: 400;
+}
+.services .services-cards .card4 .card4-content #price{
+    font-weight: 500;
+    color: #484A46;
+    font-weight: 700;
+}
+.services .services-cards .card4 p span{
+    color: #14BF98;
+}
+.button2{
+    background-color: #14BF98;
+    padding: 1.5rem 0;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    width: 10rem;
+    position: absolute;
+    top: 270px;
+    color: white;
+    font-size: 1.2rem;
+}
+.button2:hover{
+    background: none;
+    border: 2px solid #14BF98;
+    color: #14BF98;
+}
